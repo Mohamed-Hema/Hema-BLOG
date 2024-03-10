@@ -69,7 +69,12 @@ export default function Header() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </form>
-      <Button className="w-12 h-10 lg:hidden" color="gray" pill>
+      <Button
+        className="w-12 h-10 lg:hidden"
+        color="gray"
+        pill
+        onClick={() => navigate("/search")}
+      >
         <AiOutlineSearch />
       </Button>
       <div className="flex gap-2 md:order-2">
@@ -113,6 +118,9 @@ export default function Header() {
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={"div"}>
           <Link to="/">Home</Link>
+        </Navbar.Link>
+        <Navbar.Link active={path === "/search"} as={"div"}>
+          <Link to="/search">Articles</Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/about"} as={"div"}>
           <Link to="/about">About</Link>
