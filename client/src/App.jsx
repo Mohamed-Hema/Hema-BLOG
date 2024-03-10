@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import { Signup } from "./pages/Signup";
 import { SignIn } from "./pages/Signin";
@@ -11,6 +11,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import OnlyAdminPrivateRoute from "./components/OnlyAdminPrivateRoute";
 import CreatePost from "./pages/CreatePost";
 import UpdatePost from "./pages/UpdatePost";
+import PostPage from "./pages/PostPage";
 export default function App() {
   return (
     <BrowserRouter>
@@ -29,6 +30,7 @@ export default function App() {
         </Route>
 
         <Route path="/projects" element={<Projects />} />
+        <Route path="/post/:postSlug" element={<PostPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
