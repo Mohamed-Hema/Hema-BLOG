@@ -7,7 +7,7 @@ export default function CallToAction() {
         <h2 className="text-2xl">Want to learn more about my projects?</h2>
         <p className="text-gray-500 my-2">Checkout my Github Account</p>
         <Button
-          gradientDuoTone="purpleToPink"
+          gradientDuoTone="purpleToBlue"
           className="rounded-tl-xl rounded-bl-none"
         >
           <a

@@ -49,7 +49,7 @@ export const Signup = () => {
             to="/"
             className="self-center font-bold dark:text-white text-4xl"
           >
-            <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
+            <span className="px-2 py-1 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 rounded-lg text-white">
               Hema
             </span>{" "}
             Blog
@@ -89,7 +89,7 @@ export const Signup = () => {
               />
             </div>
             <Button
-              gradientDuoTone="purpleToPink"
+              gradientDuoTone="purpleToBlue"
               type="submit"
               disabled={loading}
             >
